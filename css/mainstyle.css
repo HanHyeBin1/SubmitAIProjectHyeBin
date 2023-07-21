@@ -1,0 +1,97 @@
+.header_top {
+    display: flex;
+    justify-content: flex-end
+}
+  
+.header_top li {
+    list-style: none;
+    display: inline-block;
+    font-size: 10px;
+    margin-right: 10px; /* 각 항목 사이의 간격을 설정 */
+}
+
+.header_search_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_search_content li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header_bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_bar li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.imageSlieder {
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform;
+}
+
+.customer_for_recommend_txt {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.imagegrooup1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.imagegrooup1 img {
+    max-width: 200px;
+    height: auto;
+}
+
+.imageSlieder2 {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.slide-container2 {
+    display: flex;
+    transition: transform;
+}
+
+.views_count_item {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.imagegrooup2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.imagegrooup2 img {
+    max-width: 200px;
+    height: auto;
+}
