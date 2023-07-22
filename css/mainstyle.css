@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+}
+
 .header_top {
     display: flex;
     justify-content: flex-end
@@ -6,25 +17,47 @@
 .header_top li {
     list-style: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 15px;
     margin-right: 10px; /* 각 항목 사이의 간격을 설정 */
 }
 
-.header_search_content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header_logo {
+.header_logo { /*제일 위에 로고*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header_search_content li {
-    list-style: none;
+.header_search {
+    display: flex;
+    justify-content: center;
+}
+
+.header_search_content, .top_searchbar, .sub_my_item {
+    text-align: center;
     display: inline-block;
-    margin-right: 10px;
+}
+
+.header_search_content a {
+    margin-right: 50px;
+}
+
+.top_searchbar {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.top_searchbar fieldset {
+    border: none;
+}
+
+.search_icon_btn, .top_search_text {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.sub_my_item li {
+    display: inline-block;
+    margin-right: 40px;
 }
 
 .header_bar {
@@ -71,6 +104,8 @@ a {
 
 .imageSlieder2 {
     overflow: hidden;
+    width: 1100px;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -94,4 +129,17 @@ a {
 .imagegrooup2 img {
     max-width: 200px;
     height: auto;
+}
+
+.category_all { /*전체카테고리보기*/
+    align-items: center;
+}
+
+.btn_all_category {
+    display: inline-block;
+    text-align: center;
+}
+
+.all_cate_btn_icon { /*전체카테고리보기*/
+    vertical-align: middle;
 }
