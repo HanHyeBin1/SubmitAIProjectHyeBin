@@ -120,6 +120,9 @@ ul li {
 }
 
 /* 전체카테고리보기 메뉴바 시작 */
+.header_category_bar {
+    margin-bottom: 20px;
+}
 
 .all_menu {
     width: 1104px;
@@ -166,19 +169,69 @@ ul li {
     font-weight: normal;
 }
 
-.slider_warp {
-    margin-bottom: 80px;
+#go-top {
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 9999;
+    color: #313131; /* 색상변경*/
 }
 
-.slider_warp {
+/*메인 슬라이드*/
+/* Combined CSS */
+.slider_wrap {
+    position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 0 0 70px 0;
-}
 
-.mainbanner {
+    margin-bottom: 30px;
+  }
+  
+  .mainbanner_slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .mainbanner_slide_item {
+    flex: 0 0 100%;
+  }
+  
+  .mainbanner_slide_item img {
     width: 100%;
-}
+    height: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3); /* Add background color for the arrow buttons */
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
 
 /* 고객 추천 상품 */
 .recommed_customer_wrap {
@@ -340,6 +393,16 @@ ul li {
 
 .good_new_contents ul li img {
     width: 244px;
+}
+
+.hover_test img{
+    width: 244px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.hover_test:hover img {
+    transform: scale(1.05);
 }
 
 .newitem-store {

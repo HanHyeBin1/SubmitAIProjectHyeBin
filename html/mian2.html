@@ -104,21 +104,40 @@
 
             </div>
 
+            <!-- Top 버튼 -->
+            <button id="go-top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
+                class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg>
+            </button>
+
             <!-- 메인 배너부터 시작 -->
             <div class="container">
                 <div class="contents">
-                    <div class="slider_warp">
-                        <div class="mainbanner">
-                            <a href="">
-                                <img src="image_folder/banner1.jpg" alt="메인슬라이드">
-                            </a>
+                    <div class="slider_wrap">
+                        <div class="mainbanner_slide">
+                            <div class="mainbanner_slide_item">
+                                <a href="">
+                                    <img src="image_folder/banner1.jpg" alt="메인슬라이드">
+                                </a>
+                            </div>
+                            <div class="mainbanner_slide_item">
+                                <a href="">
+                                    <img src="image_folder/banner2.jpg" alt="메인슬라이드">
+                                </a>
+                            </div>
+                            <div class="mainbanner_slide_item">
+                                <a href="">
+                                    <img src="image_folder/banner3.jpg" alt="메인슬라이드">
+                                </a>
+                            </div>
                         </div>
-                        <!-- <ul class="mainbenner_click_dot" role="tablist">
-                            <li>
-                                슬라이더 하단 동그라미 구현 필요
-                            </li>
-                        </ul> -->
-                    </div>
+                        <!-- Next and previous buttons -->
+                        <div class="prev">❮</div>
+                        <div class="next">❯</div>
+                    </div>                    
 
                     <div class="recommed_customer_wrap">
                         <div class="recommend_slider_image">
@@ -347,6 +366,8 @@
             </div>
 
         </div> <!--container-->
+
+        <script src = "../webJS/main2js.js"></script>
 
     </body>
 
